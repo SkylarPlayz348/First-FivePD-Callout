@@ -8,7 +8,7 @@ using CitizenFX.Core.Native;
 
 namespace First_FivePD_Callout
 {
-    [CalloutProperties("Stolen Car","SkylarPlayz348","1.0.0")]
+    [CalloutProperties("Stolen Police Car","SkylarPlayz348","1.0.0")]
     public class StolenPoliceCar : Callout
     {
         private Vehicle car;
@@ -44,11 +44,11 @@ namespace First_FivePD_Callout
             suspect.AttachBlip();
 
         }
+
         public async override Task OnAccept()
         {
             InitBlip();
             UpdateData();
-
         }
 
 
