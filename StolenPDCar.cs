@@ -4,7 +4,6 @@ using CitizenFX.Core;
 using static CitizenFX.Core.Native.API;
 using FivePD.API;
 using FivePD.API.Utils;
-using CitizenFX.Core.Native;
 
 namespace First_FivePD_Callout
 {
@@ -37,7 +36,7 @@ namespace First_FivePD_Callout
             car = await SpawnVehicle(VehicleHash.Police, Location);
             suspect.SetIntoVehicle(car, VehicleSeat.Driver);
 
-            API.SetDriveTaskDrivingStyle(suspect.GetHashCode(), 786956);
+            SetDriveTaskDrivingStyle(suspect.GetHashCode(), 786956);
             
             suspect.Task.FleeFrom(player);
 
